@@ -1,0 +1,64 @@
+body{
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 105vh;
+    box-sizing: border-box;
+}
+
+.container{
+}
+
+#mainlogo{
+    width: 500px;
+    display: block;
+    margin: 30px;
+}
+
+nav{
+    width: 250px;
+    margin: 0 auto;
+}
+nav ul{
+    padding-inline-start: 0px;
+}
+
+nav ul li{
+    list-style: none;
+    border: 2.5px solid #ffffff;
+    text-align: center;
+    margin: 1em 0;
+    border-radius: 5px;
+}
+
+nav ul li:hover{
+    background: #fff;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family: helvetica, arial, sans-serif;
+    padding: 1em;
+    display: block;
+    
+}
+nav ul li:hover a,
+nav ul li a:hover{
+    color: #000;
+    transition: all 1s;
+    transition: transform .25s;
+    /*transform: rotate(1turn);*/
+}
+
+/* media queries only beyond this point
+*/
+
+@media screen and (max-width:800px){
+    #mainlogo{
+        width: 90%;
+    }
+}
